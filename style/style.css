@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family: Calibri;
+    overflow: hidden;
 }
 
 #navbar {
@@ -69,4 +70,39 @@ body {
     background-color: #ffffff;
     color: black;
     transition: 0.5s;
+}
+
+#note {
+    animation: right 2s;
+}
+
+#image {
+    animation: left 2s;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(700px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(-700px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#char {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #ffffff;
 }
