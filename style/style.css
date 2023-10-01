@@ -11,7 +11,7 @@ body {
 
 #navbar ul li {
     margin: 0 50px;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 #navbar ul li a {
@@ -24,6 +24,7 @@ body {
 #navbar ul li a:hover {
     border-bottom-color: #ffffff;
     transition: cubic-bezier(1, 0, 0, 1);
+    transition: 0.5s;
 }
 
 #image img {
@@ -32,17 +33,23 @@ body {
 }
 
 #title1 {
-    padding-top: 80px;
-    font-size: 50px;
+    padding-top: 100px;
+    font-size: 120px;
     font-family: Addington CF;
 }
 
 #title2 {
     font-family: Addington CF;
+    position: relative;
+    left: 45%;
+    top: -5%;
+    font-size: 40px;
 }
 
 #title3 {
-    font-size: 14px;
+    font-size: 20px;
+    font-style: inherit;
+    margin-top: -3%;
 }
 
 #note {
@@ -55,4 +62,11 @@ body {
     background-color: black;
     color: #ffffff;
     padding: 0 25px;
+    margin-top: 30px;
+}
+
+#note #btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: 0.5s;
 }
